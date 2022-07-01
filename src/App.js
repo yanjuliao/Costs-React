@@ -15,14 +15,14 @@ function App() {
         <Link to='/company'>Empresa</Link>
         <Link to='/newproject'>Novo Projeto</Link>
       </div>
+      <Container customClass="minHeigth">
       <Routes>
-        <Container customClass="min-heigth">
           <Route path="/" element={<Home/>} />
           <Route path="/company" element={<Company/>} />
           <Route path="/contact" element={<Contact/>} />
           <Route path="/newproject" element={<NewProject/>} />
-        </Container>
       </Routes>
+      </Container>
       <p>Footer</p>
     </Router>
   );
